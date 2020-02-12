@@ -54,7 +54,7 @@ a {
 .createBtn {
     color: whitesmoke;
     font-family: 'Fondamento', cursive;
-    background-color: rgba(210, 180, 104, .4 );
+    background-color: rgba(210, 180, 104, .3 );
     font-size: 1.5rem;
     padding: 1rem;
     border-radius: 3rem;
@@ -62,6 +62,7 @@ a {
     justify-content: center;
     margin: 0 auto;
     width: 30%;
+    border-color: rgba(0, 0, 0, .2);
 }
 
 .createBtn:hover {
@@ -82,7 +83,7 @@ a {
 }
 
 .delete:hover {
-    background-color: rgba(255, 0, 0, .3);
+    background-color: rgba(220, 20, 60, .3);
     color: whitesmoke;
 }
 

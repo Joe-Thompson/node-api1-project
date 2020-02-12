@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0d53a9e-f2c4-4225-b26c-9ef962438dfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/list/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/React/list/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/React/list/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/React/list/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/list/src/Components/CreateForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/list/src/Components/CreateForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/list/src/Components/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/list/src/Components/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/list/src/Components/UpdateForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/list/src/Components/UpdateForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/lambda.db3" beforeDir="false" afterPath="$PROJECT_DIR$/data/lambda.db3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +28,7 @@
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/DevDesk/Front-End/devdesk" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SvnConfiguration">
@@ -48,7 +44,7 @@
       <workItem from="1576030362810" duration="55000" />
       <workItem from="1581457422464" duration="9116000" />
       <workItem from="1581508728970" duration="1291000" />
-      <workItem from="1581510471137" duration="19356000" />
+      <workItem from="1581510471137" duration="21105000" />
     </task>
     <servers />
   </component>
