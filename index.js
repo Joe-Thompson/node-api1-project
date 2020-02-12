@@ -1,10 +1,11 @@
 // implement your API here
 const express = require("express");
-let users = require("./data/seeds/users");
 const helpers = require("./data/db");
+const cors = require("cors");
 
 const server = express();
 server.use(express.json());
+server.use(cors());
 
 server.get("/api/users", (req, res) => {
     helpers.find()
@@ -13,37 +14,40 @@ server.get("/api/users", (req, res) => {
         })
         .catch(err => {
             console.log(err);
-            res.status(404).json({ message: "The user data is not available" })
+            res.status(404).json({ errorMessage: "The users information could not be retrieved" })
         })
 });
 
 server.get("/api/users/:id", (req, res) => {
-    const id = req.params.id;
-   helpers.findById(id)
-       .then(user => {
-        res.status(200).json(user)
-       })
-       .catch(err => {
-           console.log(err);
-           res.status(404).json({ message: `The user with id - ${id} could not be found`})
-       })
-});
-
-server.post("/api/users", (req, res) => {
-    const newUser = {
-        name: req.body.name,
-        bio: req.body.bio,
-        created_at: Date.now(),
-        updated_at: Date.now()
-    };
-    helpers.insert(newUser)
-        .then( user => {
-            res.status(201).json(user);
+    const id = Number(req.params.id);
+    helpers.findById(id)
+        .then(user => {
+            if (!user) {
+                res.status(404).json({ message: "The user with the specified ID does not exist" })
+            } else {
+                res.status(200).json(user)
+            }
         })
         .catch(err => {
             console.log(err);
-            res.status(500).json({ message: "Bad request, check your user object" })
+            res.status(500).json({ errorMessage: "The user information could not be retrieved" })
         })
+});
+
+server.post("/api/users", (req, res) => {
+    const newUser = req.body;
+    if (!newUser.name || !newUser.bio) {
+        res.status(400).json({ message: "Please provide name and bio for user" })
+    } else {
+        helpers.insert(newUser)
+            .then(user => {
+                res.status(201).json(user);
+            })
+            .catch(err => {
+                console.log(err);
+                res.status(500).json({ errorMessage: "There was an error while saving the user to the database" })
+            })
+    }
 });
 
 server.put("/api/users/:id", (req, res) => {
@@ -51,7 +55,13 @@ server.put("/api/users/:id", (req, res) => {
     const id = req.params.id;
     helpers.update(id, updateUser)
         .then(user => {
-            res.status(200).json(user)
+            if (!user) {
+                res.status(404).json({ message: "The user with the specified ID does not exist" })
+            } else if (!updateUser.name || !updateUser.bio) {
+                res.status(400).json({ message: "The user information could not be modified" })
+            } else {
+                res.status(200).json(user)
+            }
         })
         .catch(err => {
             console.log(err);
@@ -63,11 +73,15 @@ server.delete("/api/users/:id", (req, res) => {
     const id = req.params.id;
     helpers.remove(id)
         .then(user => {
-            res.status(200).json(user)
+            if (!user) {
+                res.status(404).json({ message: "The user with the specified ID does not exist" })
+            } else {
+                res.status(200).json(user)
+            }
         })
         .catch(err => {
             console.log(err);
-            res.status(404).json({ message: `The user with id of ${id} does not exist`})
+            res.status(500).json({ errorMessage: "The user could not be removed" })
         })
 });
 
