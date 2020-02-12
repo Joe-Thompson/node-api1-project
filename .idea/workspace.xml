@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0d53a9e-f2c4-4225-b26c-9ef962438dfa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/lambda.db3" beforeDir="false" afterPath="$PROJECT_DIR$/data/lambda.db3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/list/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/React/list/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/list/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/list/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/list/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/list/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/list/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/list/src/serviceWorker.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +25,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -44,7 +47,7 @@
       <workItem from="1576030362810" duration="55000" />
       <workItem from="1581457422464" duration="9116000" />
       <workItem from="1581508728970" duration="1291000" />
-      <workItem from="1581510471137" duration="2287000" />
+      <workItem from="1581510471137" duration="2904000" />
     </task>
     <servers />
   </component>
