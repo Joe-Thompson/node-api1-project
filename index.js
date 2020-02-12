@@ -58,14 +58,14 @@ server.put("/api/users/:id", (req, res) => {
             if (!user) {
                 res.status(404).json({ message: "The user with the specified ID does not exist" })
             } else if (!updateUser.name || !updateUser.bio) {
-                res.status(400).json({ message: "The user information could not be modified" })
+                res.status(400).json({ message: "Please provide name and bio for user" })
             } else {
                 res.status(200).json(user)
             }
         })
         .catch(err => {
             console.log(err);
-            res.status(500).json({ message: "Bad request, check your user object" })
+            res.status(500).json({ message: "The user information could not be modified" })
         })
 });
 

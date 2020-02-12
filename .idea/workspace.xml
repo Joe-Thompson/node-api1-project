@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0d53a9e-f2c4-4225-b26c-9ef962438dfa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/React/list/src/Components/CreateForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/React/list/src/Components/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/React/list/src/Components/UpdateForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/list/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/React/list/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/list/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/React/list/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/React/list/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/React/list/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/React/list/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/React/list/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/React/list/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/list/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/React/list/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/list/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/list/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/list/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/lambda.db3" beforeDir="false" afterPath="$PROJECT_DIR$/data/lambda.db3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +35,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Guided-Project" />
+    <property name="last_opened_file_path" value="$USER_HOME$/DevDesk/Front-End/devdesk" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -47,7 +52,7 @@
       <workItem from="1576030362810" duration="55000" />
       <workItem from="1581457422464" duration="9116000" />
       <workItem from="1581508728970" duration="1291000" />
-      <workItem from="1581510471137" duration="2904000" />
+      <workItem from="1581510471137" duration="12510000" />
     </task>
     <servers />
   </component>
@@ -72,10 +77,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2101" y="346" width="539" height="422" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1581460341082" />
-    <state x="2663" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1581510678078">
+    <state x="2663" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1581513626552">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2663" y="311" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1581510678078" />
+    <state x="2663" y="311" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1581513626552" />
     <state x="1920" y="188" width="992" height="737" key="SettingsEditor" timestamp="1581458420530">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
