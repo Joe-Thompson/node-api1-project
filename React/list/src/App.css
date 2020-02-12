@@ -2,28 +2,142 @@ html {
     background-color: #D2B468;
 }
 
+a {
+    text-decoration: none;
+}
+
 .App {
     /*background-color: #CFE3E2;*/
     background-image: url("./Imgs/background.jpg");
     background-size: cover;
     -webkit-background-composite: unset;
     background-position: center;
-    display: flex;
-    width: 100rem;
-    height: 48rem;
-    margin: 3rem auto;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
     padding: 3rem;
     border-radius: 1rem;
     box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
     -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
 }
 
-.Title {
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.title {
+    /*font-family: 'Eagle Lake', cursive;*/
+    font-family: 'Fondamento', cursive;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    margin: -2.5rem 1rem 5rem 1rem;
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.userCard {
+    background-color: rgba(210, 180, 104, .4 );
+    font-family: 'Eagle Lake', cursive;
+    width: 27%;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: whitesmoke;
+    display: flex;
+    margin: 2rem auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.createBtn {
+    color: whitesmoke;
+    font-family: 'Fondamento', cursive;
+    background-color: rgba(210, 180, 104, .4 );
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.createBtn:hover {
+    background-color: rgba(0, 0, 0, .6);
+    color: #D2B468;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: .5rem;
+    width: 75%;
+    margin: .5rem;
+}
+
+.delete {
+    border: none;
+    width: 78%;
+}
+
+.delete:hover {
+    background-color: rgba(255, 0, 0, .3);
+    color: whitesmoke;
+}
+
+.createForm {
+    display: flex;
+    width: 35%;
+    padding: 3rem;
+    border-radius: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 11rem auto 15rem auto;
+    background-color: rgba(210, 180, 104, .6 );
+}
+
+.input {
+    padding: .3rem;
+    border-radius: .5rem;
+    margin: .5rem;
+    width: 30rem;
     font-family: 'Eagle Lake', cursive;
 }
 
-h1 {
-    color: #D2B468;
+.label {
+    font-family: 'Eagle Lake', cursive;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.name {
+    margin: .5rem;
+}
+
+.updateForm {
+    display: flex;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(210, 180, 104, .6 );
+}
+
+.updateCard {
+    margin-top: 7.5rem;
+}
+
+.update {
+    width: 80%;
+}
+
+.updateComponent {
+
+    height: 52rem;
 }
 
 

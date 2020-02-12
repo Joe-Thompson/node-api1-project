@@ -31,22 +31,25 @@ function CreateForm({ history }) {
 
     return (
         <div>
-            <form onSubmit={submitHandler}>
-                <label htmlFor="name">Name</label>
+            <h1 className="title">Add a New Companion to your Fellowship</h1>
+            <form className="createForm" onSubmit={submitHandler}>
+                <label className="label" htmlFor="name">Name</label>
                     <input type="text"
+                    className="input"
                     name="name"
                     value={newUser.name}
                     placeholder="Please enter a name"
                     onChange={changeHandler}
                     />
-                <label htmlFor="bio">Bio</label>
+                <label className="label" htmlFor="bio">Bio</label>
                     <input type="text"
+                    className="input"
                     name="bio"
                     value={newUser.bio}
                     placeholder="Please enter your bio"
                     onChange={changeHandler}
                     />
-                <button type="submit">Submit</button>
+                <button className="createBtn btn" type="submit">Submit</button>
             </form>
         </div>
     )

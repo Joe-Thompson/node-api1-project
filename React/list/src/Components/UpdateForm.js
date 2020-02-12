@@ -50,13 +50,16 @@ function UpdateForm({ match, history }) {
     };
 console.log(newInfo);
     return (
-        <div onClick={() => edit(newInfo)}>
+        <div className="updateComponent">
+            <h1 className="title">Update your Companions</h1>
+        <div className="userCard updateCard" onClick={() => edit(newInfo)}>
             <h1>{user.name}</h1>
             <h3>{user.bio}</h3>
             {editState && (
-                  <form onSubmit={submitHandler}>
+                  <form className="updateForm" onSubmit={submitHandler}>
                       <label htmlFor="name">{user.name} - </label>
                       <input type="text"
+                             className="input update"
                              name="name"
                              value={newInfo.name}
                              placeholder="Update your name"
@@ -64,14 +67,16 @@ console.log(newInfo);
                       />
                       <label htmlFor="bio">{user.bio} - </label>
                       <input type="text"
+                             className="input update"
                              name="bio"
                              value={newInfo.bio}
                              placeholder="Update your bio"
                              onChange={changeHandler}
                       />
-                      <button type="submit">Submit</button>
+                      <button className="createBtn btn" type="submit">Submit</button>
                   </form>
             )}
+        </div>
         </div>
     )
 }

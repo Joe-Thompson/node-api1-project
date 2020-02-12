@@ -36,20 +36,22 @@ function Dashboard() {
 
 console.log(users);
     return (
-        <div>
-            <h1 className="Title">The Fellowship of the Ring</h1>
-            {users.map((user) => {
-                    return (
-                        <div key={user.id}>
-                            <h1>{user.name}</h1>
-                            <h3>{user.bio}</h3>
-                            <Link to={`/update/${user.id}`}>Update</Link>
-                            <button value={user.id} onClick={clickHandler}>Delete</button>
-                        </div>
-                    )
-                })}
-                <Link to="/create">Create New User</Link>
-        </div>
+        <>
+            <h1 className="title">The Fellowship of the Ring</h1>
+            <div className="dashboard">
+                {users.map((user) => {
+                        return (
+                            <div className="userCard" key={user.id}>
+                                <h1 className="name">{user.name}</h1>
+                                <h3>{user.bio}</h3>
+                                <Link className="createBtn btn" to={`/update/${user.id}`}>Update</Link>
+                                <button className="createBtn btn delete" value={user.id} onClick={clickHandler}>Delete</button>
+                            </div>
+                        )
+                    })}
+            </div>
+            <Link className="createBtn" to="/create">Create New User</Link>
+        </>
     )
 }
 
