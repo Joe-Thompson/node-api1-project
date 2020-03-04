@@ -4,7 +4,8 @@
   "description": "Node API 1 Project Starter Code",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "prettier": "./node_modules/.bin/prettier —-write '**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,13 @@
     "nodemon": "^2.0.1"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "create-react-app": "^3.3.1",
+    "express": "^4.17.1",
+    "i": "^0.3.6",
     "knex": "^0.20.3",
+    "list": "^2.0.19",
+    "prettier": "^1.19.1",
     "sqlite3": "^4.1.0"
   }
 }
